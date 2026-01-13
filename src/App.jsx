@@ -11,7 +11,7 @@ import AdminDashboardPage from './pages/dashboard/admin/AdminDashboardPage.jsx'
 import VendorDashboardPage from './pages/dashboard/vendor/VendorDashboardPage.jsx'
 
 // products imports
-import ProductsIndexPage from './pages/products/ProductsIndexPage.jsx'
+import ProductsIndexPage from './pages/product_pages/ProductsIndexPage.jsx'
 import WishListProductsPage from './pages/product_pages/wish_list/WishListProductsPage.jsx'
 import FavouriteProducts from './pages/product_pages/favourite/FavouriteProducts.jsx'
 import ProductsPage from './pages/product_pages/products/ProductsPage.jsx'
@@ -45,30 +45,35 @@ function App() {
 
           {/* oauth */}
           <Route path='/oauth' element={<OauthIndexPage/>}>
-            <Route path='/login' element={ <LoginPage/> }/>
+            {/* Use relative paths for nested routes */}
+            <Route path='login' element={ <LoginPage/> }/>
 
             {/* register */}
-            <Route path='/register' element={ <RegisterIndexPage/> }>
-              <Route path='/register-user' element={ <UserRegisterPage/> }/>
-              <Route path='/register-admin' element={ <AdminRegisterPage/> }/>
-              <Route path='/vendor-vendor' element={ <VendorRegisterPage/> }/>
+            <Route path='register' element={ <RegisterIndexPage/> }>
+              <Route path='user' element={ <UserRegisterPage/> }/>
+              <Route path='admin' element={ <AdminRegisterPage/> }/>
+              <Route path='vendor' element={ <VendorRegisterPage/> }/>
             </Route>
-
           </Route>
 
           {/* dashboard */}
           <Route path='/dashboard' element={ <DashboardIndexPage/> }>
-            <Route index path='product-page' element={ <ProductsPage/> } />
+ 
+            {/* cart */}
+            <Route path='cart' element={ <CartIndexPage/> }>
+              <Route path='items' element={ <CartPage/> }/>
+              <Route path='checkout' element={ <CheckoutPage/> }/>
+            </Route>
 
             {/* dashboards */}
-            <Route path='/user-dashboard' element={ <UserDashboardPage/> }/>
-            <Route path='/admin-dashboard' element={<AdminDashboardPage/>}/>
-            <Route path='/vendor-dashboard' element={<VendorDashboardPage/>}/>
+            <Route path='user' element={ <UserDashboardPage/> }/>
+            <Route path='admin' element={<AdminDashboardPage/>}/>
+            <Route path='vendor' element={<VendorDashboardPage/>}/>
 
             {/* products */}
-            <Route path='/products' element={<ProductsIndexPage/>}>
-              <Route path='/favourites' element={ <FavouriteProducts/> }/>
-              <Route path='/wish-list' element={ <WishListProductsPage/> }/>
+            <Route path='products' element={<ProductsIndexPage/>}>
+              <Route path='favourites' element={ <FavouriteProducts/> }/>
+              <Route path='wish-list' element={ <WishListProductsPage/> }/>
             </Route>
           </Route>
 
