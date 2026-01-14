@@ -5,6 +5,7 @@ import SkinCareAdDescription from '../../components/landingpage_components/skin_
 import SkinCareAdDescriptionTwo from '../../components/landingpage_components/skin_care/SkinCareAdDescriptionTwo'
 import SkinCareAdDescriptionThree from '../../components/landingpage_components/skin_care/SkinCareAdDescriptionThree'
 import SkinCareProducts from '../../components/landingpage_components/skin_care/SkinCareProducts'
+import FooterComponent from '../../components/ui/footer/FooterComponent'
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
      <SkinCareAdDescriptionTwo/>
      <SkinCareAdDescriptionThree/>
      <SkinCareProducts/>
+     <FooterComponent/>
 
     </>
   )

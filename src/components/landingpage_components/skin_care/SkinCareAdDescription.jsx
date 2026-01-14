@@ -9,8 +9,7 @@ const SkinCareAdDescription = () => {
           <h2 className='text-gray-600/80 justify-end text-sm'>02 - Glowcare</h2>
         </div>
 
-        {/* header */}
-        <div className="flex justify-center items-center w-full">
+         <div className="flex justify-center items-center w-full">
             <div className="w-[90%] flex justify-end items-end p-4">
               <span className="text-3xl font-semibold w-[42rem] leading-10 px-10">
                 Choose A Product And Have An Evening of Reflection and Future Vision
@@ -18,14 +17,11 @@ const SkinCareAdDescription = () => {
             </div>
         </div>
 
-        {/* upper container - now separate */}
         <div className="w-full flex justify-center items-center mt-10">
           <div className="w-[70%] relative min-h-[500px]">
             
-            {/* First section - positioned at top left with spacing */}
             <div className="absolute top-0 left-0 w-1/3 h-42 justify-center items-center border-2 bg-lime-200/50 border-lime-500/40 rounded-md p-4 z-10 shadow-lg -mt-2 -ml-2">
               <div className="w-full flex flex-col h-30 justify-center items-center gap-4">
-                {/* header */}
                 <div className="flex flex-col gap-2 w-full">
                     <span className="text-2xl font-semibold">Total</span>
                     <span className="text-2xl font-semibold">Counties</span>
@@ -39,10 +35,8 @@ const SkinCareAdDescription = () => {
               </div>
             </div>
 
-            {/* Middle section - centered with spacing */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col w-1/3 h-42 justify-center items-center border-2 bg-lime-500/60 border-lime-500/40 rounded-md p-4 shadow-xl">
-               {/* header */}
-               <div className="w-full flex justify-start items-start p-2">
+                <div className="w-full flex justify-start items-start p-2">
                  <span className="text-3xl font-semibold">180 +</span>
                </div>
                <div className="w-full flex justify-center p-2 rounded-md overflow-hidden">
@@ -60,10 +54,8 @@ const SkinCareAdDescription = () => {
                </div>
             </div>
 
-            {/* Third section - positioned at bottom right with spacing */}
             <div className="absolute bottom-0 right-0 w-1/3 h-42 justify-center items-center border-2 bg-lime-300/50 border-lime-500/40 rounded-md p-4 z-10 shadow-lg -mb-2 -mr-2">
               <div className="w-full flex flex-col h-30 justify-center items-center gap-4">
-                {/* header */}
                 <div className="flex flex-col gap-2 w-full">
                     <span className="text-2xl font-semibold">Happy</span>
                     <span className="text-2xl font-semibold">Customers</span>
@@ -79,7 +71,6 @@ const SkinCareAdDescription = () => {
           </div>
         </div>
 
-        {/* lower container - separate from upper */}
         <div className="w-full mt-20 flex flex-col justify-center items-center">
             <div className="w-[80%] flex justify-start items-start">
                 <div className="flex justify-center items-center rounded-full border-2 border-gray-400/50 gap-3 px-2 p-1">
@@ -127,7 +118,6 @@ const SkinCareAdDescription = () => {
                         </div>
                     </div>
 
-                    {/* Middle image with overlay */}
                     <div className="relative w-96 h-[34rem] rounded-lg overflow-hidden">
                         <img 
                             src="https://i.pinimg.com/736x/65/01/45/650145b9c2d0f11dd9001135eede0f72.jpg" 
@@ -135,10 +125,8 @@ const SkinCareAdDescription = () => {
                             className="w-full h-full object-cover" 
                         />
                         
-                        {/* Overlay div - positioned absolutely over the image */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                         
-                        {/* Optional: Add content on top of overlay */}
                         <div className="absolute bottom-6 left-6 right-6 text-white">
                             <h3 className="text-2xl font-bold mb-2">Premium Collection</h3>
                             <p className="text-sm opacity-90">Discover our exclusive skincare line for radiant, glowing skin</p>

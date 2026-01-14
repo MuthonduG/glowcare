@@ -6,7 +6,6 @@ const SkinCareAdDescriptionTwo = () => {
 
         {/* main component */}
         <div className="w-[80%] flex justify-center items-center gap-6">
-            {/* left - with relative positioning for absolute child */}
             <div className="flex flex-1 flex-col justify-start items-start p-6 gap-4 relative min-h-[500px] rounded-lg">
                 
                 <div className="flex flex-col gap-4 w-[80%] py-6 p-4 border-r-2 border-teal-500 relative">
@@ -29,16 +28,14 @@ const SkinCareAdDescriptionTwo = () => {
                     </button>
                 </div>
 
-                {/* absolute component positioned at bottom right corner */}
+
                 <div className="absolute bottom-4 right-4 w-48 h-48 bg-white rounded-lg overflow-hidden shadow-xl border-4 border-white z-10">
                     <img 
                       src="https://i.pinimg.com/736x/5f/e3/52/5fe3522fe48ed25387c562231641cdb2.jpg" 
                       alt="Skincare product" 
                       className="w-full h-full object-cover"
                     />
-                    {/* Optional overlay */}
                     <div className="absolute inset-0 bg-gradient-to-tr from-teal-300/10 to-transparent"></div>
-                    {/* Badge/icon */}
                     <div className="absolute top-2 right-2 bg-teal-500 text-white text-xs font-bold px-2 py-1 rounded">
                       NEW
                     </div>
@@ -54,7 +51,6 @@ const SkinCareAdDescriptionTwo = () => {
                   alt="Skincare routine" 
                   className="w-full h-full object-cover rounded-2xl"
                 />
-                {/* Overlay for right image */}
                 <div className="absolute inset-0 bg-gradient-to-l from-teal-400/10 to-transparent"></div>
               </div>
             </div>

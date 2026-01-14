@@ -134,7 +134,6 @@ const SkinCareAdDescriptionThree = () => {
                </div>
             </div>
 
-            {/* absolute div card showing price and image - using consistent card format */}
             <div className="absolute right-10 top-1/2 transform -translate-y-1/2 w-96 z-20">
                 <div className="flex flex-col justify-center items-center overflow-hidden">
                     <div className="w-full rounded-2xl overflow-hidden relative border-4 border-white shadow-2xl">

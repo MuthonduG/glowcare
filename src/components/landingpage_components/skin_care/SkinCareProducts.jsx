@@ -147,7 +147,6 @@ const SkinCareProducts = () => {
             {
                 sample_product.map((product) => (
                     <div key={product.id} className="flex flex-col justify-center items-center overflow-hidden">
-                        {/* Image container with relative positioning */}
                         <div className="w-full rounded-2xl overflow-hidden relative">
                             <img 
                                 src={product.image} 
@@ -155,7 +154,6 @@ const SkinCareProducts = () => {
                                 className="w-full h-80 object-cover" 
                             />
                             
-                            {/* Absolute div at bottom of image */}
                             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
                                 <div className="w-full flex justify-between items-center gap-3">
                                     <button className='flex justify-between items-center gap-2 rounded-full border-2 border-white/80 bg-white/10 backdrop-blur-sm text-white p-2 px-6 hover:bg-white/20 hover:border-white transition-all duration-300'>
@@ -184,7 +182,6 @@ const SkinCareProducts = () => {
                                 </p>
                             </div>
                             
-                            {/* Additional info */}
                             <div className="flex items-center justify-between mt-4 p-2">
                                 <div className="flex items-center">
                                     <div className="text-amber-500">
@@ -212,22 +209,17 @@ const SkinCareProducts = () => {
                 className="h-full" 
               />
               
-              {/* teal overlay on image */}
               <div className="absolute inset-0 bg-gradient-to-tr from-teal-900/60 via-teal-700/40 to-transparent"></div>
               
-              {/* overlay / absolute div appearing at the bottom of the image */}
               <div className="absolute bottom-10 left-10 right-10 flex flex-col justify-center items-start text-white z-10">
-                {/* header */}
                 <span className="text-4xl font-bold mb-6 max-w-2xl leading-[3.5rem]">
                     Fostering Water Sustainability While Celebrating Global Beauty
                 </span>
                 
-                {/* description */}
                 <p className="text-lg mb-8 max-w-2xl opacity-90">
                     Join us in our commitment to eco-friendly beauty practices that preserve water resources while enhancing natural beauty worldwide. Every purchase contributes to clean water initiatives.
                 </p>
                 
-                {/* action buttons */}
                 <div className="flex justify-start items-center gap-4">
                     <button className="bg-white text-teal-800 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2">
                         <span>Learn More</span>
@@ -238,8 +230,7 @@ const SkinCareProducts = () => {
                     </button>
                 </div>
                 
-                {/* stats */}
-                <div className="flex justify-start items-center gap-8 mt-10 pt-8 border-t border-white/30">
+\                <div className="flex justify-start items-center gap-8 mt-10 pt-8 border-t border-white/30">
                     <div className="flex flex-col">
                         <span className="text-3xl font-bold">10K+</span>
                         <span className="text-sm opacity-80">Liters Conserved</span>
