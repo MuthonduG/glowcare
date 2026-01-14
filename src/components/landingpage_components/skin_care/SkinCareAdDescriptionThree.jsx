@@ -1,4 +1,3 @@
-import React from 'react'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -26,8 +25,7 @@ const SkinCareAdDescriptionThree = () => {
         <div className="mt-8 w-[80%] flex justify-center items-center gap-4">
             
             <div className="flex flex-col justify-center items-center w-96 overflow-hidden">
-                {/* Image container with relative positioning */}
-                <div className="w-full rounded-md overflow-hidden">
+                 <div className="w-full rounded-md overflow-hidden">
                     <img 
                         src="https://i.pinimg.com/736x/89/16/5c/89165c426630e61ac1febbb66d3365f6.jpg" 
                         alt="Hazel Toner" 
@@ -51,7 +49,6 @@ const SkinCareAdDescriptionThree = () => {
             </div>
 
             <div className="flex flex-col justify-center items-center w-96 overflow-hidden">
-                {/* Image container with relative positioning */}
                 <div className="w-full rounded-md overflow-hidden relative">
                     <img 
                         src="https://i.pinimg.com/736x/22/15/e6/2215e6979b1797803d86c5ec1bfef991.jpg" 
@@ -59,7 +56,7 @@ const SkinCareAdDescriptionThree = () => {
                         className="w-full h-96 object-cover" 
                     />
                     
-                    {/* Absolute div at bottom of image */}
+ 
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
                         <div className="w-full flex justify-between items-center gap-3">
                             <button className='flex justify-between items-center gap-2 rounded-full border-2 border-white/80 bg-white/10 backdrop-blur-sm text-white p-2 px-6 hover:bg-white/20 hover:border-white transition-all duration-300'>
@@ -140,7 +137,6 @@ const SkinCareAdDescriptionThree = () => {
             {/* absolute div card showing price and image - using consistent card format */}
             <div className="absolute right-10 top-1/2 transform -translate-y-1/2 w-96 z-20">
                 <div className="flex flex-col justify-center items-center overflow-hidden">
-                    {/* Image container with relative positioning - same as above cards */}
                     <div className="w-full rounded-2xl overflow-hidden relative border-4 border-white shadow-2xl">
                         <img 
                             src="https://i.pinimg.com/736x/86/6c/03/866c039b9f5473b9df541b7e7b25871a.jpg" 
@@ -148,7 +144,6 @@ const SkinCareAdDescriptionThree = () => {
                             className="w-full h-64 object-cover" 
                         />
                         
-                        {/* Absolute div at bottom of image - consistent with above */}
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
                             <div className="w-full flex justify-between items-center gap-3">
                                 <button className='flex justify-between items-center gap-2 rounded-full border-2 border-white/80 bg-white/10 backdrop-blur-sm text-white p-2 px-6 hover:bg-white/20 hover:border-white transition-all duration-300'>
@@ -163,7 +158,6 @@ const SkinCareAdDescriptionThree = () => {
                         </div>
                     </div>
                     
-                    {/* Card content below image - consistent with above */}
                     <div className="border-2 border-lime-200 bg-white rounded-3xl mt-6 p-4 w-full shadow-lg opacity-60">
                         <div className="w-full flex justify-center items-center">
                             <div className="flex justify-between items-center w-full p-2">
