@@ -31,6 +31,8 @@ import CheckoutPage from './pages/cart_pages/checkout/CheckoutPage.jsx'
 
 // landing page
 import LandingPage from './pages/landing_page/LandingPage.jsx'
+import ProductPage from './pages/product_pages/products/ProductPage.jsx'
+import NavbarComponent from './components/ui/nav/navbar/NavbarComponent.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,10 +40,12 @@ function App() {
   return (
     <>
       <Router>
+        <NavbarComponent/>
         <Routes>
           {/* index route */}
           <Route index path='/' element={ <LandingPage/> }/>
-          <Route path='product-page' element={ <ProductsPage/> } />
+          <Route path='/product-page' element={ <ProductsPage/> } />
+          <Route path='/product-page/:id' element={ <ProductPage/> } />
 
           {/* oauth */}
           <Route path='/oauth' element={<OauthIndexPage/>}>

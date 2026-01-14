@@ -11,7 +11,6 @@ const LandingPage = () => {
   return (
     <>
 
-     <NavbarComponent/>
      <HeaderComponent/>
      <SkinCareAdDescription/>
      <SkinCareAdDescriptionTwo/>
