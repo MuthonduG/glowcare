@@ -1,4 +1,3 @@
-import React from 'react'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { BsArrowRight } from "react-icons/bs";
 
