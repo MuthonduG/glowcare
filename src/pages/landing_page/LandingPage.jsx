@@ -11,9 +11,9 @@ const LandingPage = () => {
   return (
     <>
 
-     <HeaderComponent/>
-     <SkinCareAdDescription/>
-     <SkinCareAdDescriptionTwo/>
+     {/* <HeaderComponent/> */}
+     {/* <SkinCareAdDescription/> */}
+     {/* <SkinCareAdDescriptionTwo/> */}
      <SkinCareAdDescriptionThree/>
      <SkinCareProducts/>
      <FooterComponent/>
